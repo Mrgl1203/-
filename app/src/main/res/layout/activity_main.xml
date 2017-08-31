@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gl.slidetry.MainActivity">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/DrawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/mainFrame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/leftFrame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/rightFrame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end">
+
+        </FrameLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent">
+
+
+        <Button
+            android:id="@+id/butleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="左" />
+
+        <Button
+            android:id="@+id/butright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="右" />
+
+        <Button
+            android:id="@+id/butgo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="gosliding" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
